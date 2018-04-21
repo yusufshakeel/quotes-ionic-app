@@ -14,9 +14,10 @@
 
 <ion-content padding>
 
-  <ion-list>
+  <ion-list inset>
     <ion-item-sliding *ngFor="let quote of quotes">
       <ion-item
+        padding
         color="quoteBackground"
         [ngClass]="{alt: isAlternativeBackgrounON}"
         (click)="onViewQuote(quote)">
